@@ -9,6 +9,10 @@
 cifrado =  \chords {
   \set chordChanges = ##t
   \set noChordSymbol = ""
+  
+  \repeat unfold 4 { ees1 | bes:7 }
+  d:7 | g:7 | c:7 | f | bes:7 | bes2:7 ees |
+  ees1 | bes:7 | ees2 ges:dim | bes:7 ees |
 }
 
 melo = \relative c' {

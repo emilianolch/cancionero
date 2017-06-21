@@ -15,7 +15,8 @@
   tagline = ##f
 }
 
-intro = \markup { \box Intro }
+intro = \markup { \box INTRO }
+outro = \markup { \box OUTRO }
 parteA = \markup { \box A }
 parteB = \markup { \box B }
 parteC = \markup { \box C }

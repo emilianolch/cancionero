@@ -10,6 +10,22 @@
 cifrado =  \chords {
   \set chordChanges = ##t
   \set noChordSymbol = ""
+  
+  g2:min bes | a1:7 | g2:min bes | a1:7 |
+  
+  d1:min | f | a:7 | a:7 | 
+  d1:min | f | a:7 | a:7 |
+  \set chordChanges = ##f 
+  a:7 |
+  \set chordChanges = ##t
+  a:7 |
+  
+  bes | d:min | a:7 | d:min |
+  bes | d:min | a:7 | d:min |
+  bes | d:min | a:7 | d:min |
+  a:7 | d:min | a:7 | d:min |
+  
+  g2:min bes | a1:7
 }
 
 melo = \relative c'' {
