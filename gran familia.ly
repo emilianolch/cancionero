@@ -17,7 +17,8 @@ cifrado =  \chords {
   a1 | a2 bes:dim | a:min7 e:7 | a:min7 e:7 |
   a:min7 e:7 | a:min7 e:7 | a1 | a |
   
-  cis:7 | cis:7 | fis:min
+  cis:7 | cis:7 | fis:min | fis:min7 |
+  f2:7 e:7 | a fis:min7 | f:7 e:7 | a1 | bes:7
 
 }
 
@@ -40,8 +41,8 @@ melo = \relative c' {
   \mark \parteB
   gis b, d cis e8 f fis g | gis b, d cis fis f fis gis | a1 | r2 fis8 f e ees |
   \break
-  d cis c cis e d c gis | a c cis d fis8 f e ees | d cis c cis e d c gis | a1
-  
+  d cis c cis e d c gis | a c cis d fis8 f e ees | d cis c cis e d c gis | a1 |
+  r1
   \fin
 }
 
