@@ -9,6 +9,10 @@
 }
 \paper {
   system-system-spacing = #'((basic-distance . 0.1) (padding . 7))
+  top-margin = 20
+  bottom-margin = 15
+  left-margin = 10
+  right-margin = 10
 }
 
 \header {
@@ -27,11 +31,11 @@ dbar = \bar "||"
 
 % Function to print a specified number of slashes
 comp = #(define-music-function (parser location count) ( integer?)
-  #{
-    \override Rest #'stencil = #ly:percent-repeat-item-interface::beat-slash
-    \override Rest #'thickness = #0.48
-    \override Rest #'slope = #1.7
-    \repeat unfold $count { r4 }
-    \revert Rest #'stencil
-  #}
-)
+          #{
+            \override Rest #'stencil = #ly:percent-repeat-item-interface::beat-slash
+            \override Rest #'thickness = #0.48
+            \override Rest #'slope = #1.7
+            \repeat unfold $count { r4 }
+            \revert Rest #'stencil
+          #}
+          )
