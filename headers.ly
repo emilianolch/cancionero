@@ -6,6 +6,10 @@
     \override ChordName.font-size = #5
     \override ChordName.font-name = "Nimbus Roman No9 L"
   }
+  \context {
+      \Score
+      \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/16)
+  }
 }
 \paper {
   system-system-spacing = #'((basic-distance . 0.1) (padding . 7))
