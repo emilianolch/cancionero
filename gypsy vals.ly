@@ -4,6 +4,7 @@
   title = "Gypsy Vals"
   composer = "Lucho Splif"
   poet = "Vals"
+  meter = "Tocar A antes de cada solo."
 }
 
 cifrado =  \chords {
