@@ -8,6 +8,8 @@
 }
 
 cifrado =  \chords {
+  \partial 2 r2
+  
 }
 
 melo = \relative c'' {
@@ -17,14 +19,13 @@ melo = \relative c'' {
  
   
   \mark \parteA
-  \repeat volta 2 {
-    d4 f2.~ | f2 d8 c cis d~ | d4 g2.~ | g2 d8 cis d4 |
-    d bes bes g8 bes~ | bes2 d8 cis d d~ | d4 bes f'8 e ees d~ | 
-  }
-  \alternative {
-    { d2 bes8 bes c d~ }
-    { d2 g4 bes }
-  }
+  d4 f2.~ | f2 d8 c cis d~ | d4 g2.~ | g2 d8 cis d4 |
+  d bes bes g8 bes~ | bes2 d8 cis d d~ | d4 bes f'8 e ees d~ | d2 bes8 bes c d |
+  \break
+  
+  \mark \parteA
+  d4 f2.~ | f2 d8 c cis d~ | d4 g2.~ | g2 d8 cis d4 | 
+  d bes bes g8 bes~ | bes2 d8 cis d d~ | d4 bes f'8 e ees d~ | d2 g4 bes |
   \break
   
   \mark \parteB
@@ -41,7 +42,10 @@ melo = \relative c'' {
   \break
   
   \coda
-  bes2 d8 cis d d~ | d4 bes bes'8 a g f~ | f4 f g8 f g bes~ | bes1
+  \hideNotes 
+  d1~ |
+  \unHideNotes
+  d2 d8 cis d d~ | d4 bes bes'8 a g f~ | f4 f g8 f g bes~ | bes1
    
   \fin
 }

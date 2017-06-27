@@ -12,6 +12,7 @@
   }
   \set chordChanges = ##t
   \set noChordSymbol = ""
+  %\set Score.markFormatter = #format-mark-box-alphabet
 }
 
 
