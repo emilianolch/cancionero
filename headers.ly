@@ -40,6 +40,13 @@ dbar = \bar "||"
 
 coda = \mark \markup { \musicglyph #"scripts.coda" }
 
+break-tag = \markup { \italic \bold \large \text "break" }
+
+break-in = \set Score.repeatCommands = 
+  #(list(list 'volta break-tag))
+  
+break-out = \set Score.repeatCommands = #'((volta #f))
+
 
 % Function to print a specified number of slashes
 comp = #(define-music-function (parser location count) ( integer?)
