@@ -8,9 +8,6 @@
 }
 
 cifrado =  \chords {
-  \set chordChanges = ##t
-  \set noChordSymbol = ""
-  
   g2:min bes | a1:7 | g2:min bes | a1:7 |
   
   d1:min | f:dim | a:7 | a:7 | 

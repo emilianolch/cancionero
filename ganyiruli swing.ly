@@ -7,9 +7,6 @@
 }
 
 cifrado =  \chords {
-  \set chordChanges = ##t
-  \set noChordSymbol = ""
-  
   \repeat unfold 4 { ees2 c:min | bes1:7 }
   d:7 | g:7 | c:7 | f | bes:7 | bes2:7 ees |
   ees2 c:min | bes1:7 | ees2 e:dim | f4:7 bes:7 ees2 |

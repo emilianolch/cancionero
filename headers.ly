@@ -10,7 +10,12 @@
       \Score
       \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/16)
   }
+  \set chordChanges = ##t
+  \set noChordSymbol = ""
 }
+
+
+
 \paper {
   system-system-spacing = #'((basic-distance . 0.1) (padding . 7))
   top-margin = 20
