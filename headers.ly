@@ -37,6 +37,8 @@ parteC = \markup { \box C }
 fin = \bar "|."
 dbar = \bar "||"
 
+coda = \mark \markup { \musicglyph #"scripts.coda" }
+
 
 % Function to print a specified number of slashes
 comp = #(define-music-function (parser location count) ( integer?)
