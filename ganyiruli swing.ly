@@ -1,7 +1,7 @@
 \include "headers.ly"
 
 \header {
-  title = "Ganyiruli Swing"
+  title = \markup { \abs-fontsize #32 "Ganyiruli Swing" }
   composer = "Miguel Pérez"
   poet = "Swing"
 }

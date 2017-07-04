@@ -3,26 +3,38 @@
 \layout {
   \context {
     \ChordNames
-    \override ChordName.font-size = #5
-    \override ChordName.font-name = "Nimbus Roman No9 L"
+    \override ChordName.font-size = #8
+    %\override ChordName.font-name = "FreeSans"
+    \override ChordName.font-series = #'bold
   }
   \context {
       \Score
       \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/16)
+      defaultBarType = "."
   }
   \set chordChanges = ##t
   \set noChordSymbol = ""
+  \set minorChordModifier = \markup { "-" }
+  %\set majorSevenSymbol = \markup { "maj7"}
+  
+  
   %\set Score.markFormatter = #format-mark-box-alphabet
+  
 }
 
 
 
 \paper {
-  system-system-spacing = #'((basic-distance . 0.1) (padding . 7))
-  top-margin = 20
-  bottom-margin = 15
-  left-margin = 10
-  right-margin = 10
+  page-breaking = #ly:minimal-breaking
+  markup-system-spacing = #'((basic-distance . 30)
+                             (minimum-distance . 20))
+                              
+  system-system-spacing = #'((minimum-distance . 15)
+                             (basic-distance . 20))
+  top-margin = 10
+  bottom-margin = 10
+  left-margin = 15
+  right-margin = 15
 }
 
 \header {
@@ -38,7 +50,7 @@ parteC = \markup { \box C }
 fin = \bar "|."
 dbar = \bar "||"
 
-coda = \mark \markup { \musicglyph #"scripts.coda" }
+coda = \mark \markup { \abs-fontsize #20 \musicglyph #"scripts.coda" }
 
 break-tag = \markup { \italic \bold \large \text "break" }
 
