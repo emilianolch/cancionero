@@ -1,7 +1,7 @@
 \include "headers.ly"
 
 \header {
-  title = "Vidala"
+  title = \markup { \abs-fontsize #32 "Vidala" }
   composer = "Cocho López"
   poet = "Swing"
 }
@@ -41,6 +41,7 @@ flauta = {
   \relative c'' {
     \partial 2  c4 d |
     \bar "||"
+    \ocultar-clave
     \mark \parteA
     e2 e4 e
     a1~
@@ -72,6 +73,7 @@ flauta = {
 
 clarinete = \relative c'' {
   \partial 2 a b |
+  \ocultar-clave
   c2 c4 c 
   f1~
   f2 f8 e f g

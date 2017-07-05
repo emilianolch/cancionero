@@ -3,7 +3,7 @@
 \layout {
   \context {
     \ChordNames
-    \override ChordName.font-size = #8
+    \override ChordName.font-size = #7
     %\override ChordName.font-name = "FreeSans"
     \override ChordName.font-series = #'bold
   }
@@ -15,7 +15,6 @@
   \set chordChanges = ##t
   \set noChordSymbol = ""
   \set minorChordModifier = \markup { "-" }
-  %\set majorSevenSymbol = \markup { "maj7"}
   
   
   %\set Score.markFormatter = #format-mark-box-alphabet

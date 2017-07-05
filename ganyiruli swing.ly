@@ -18,7 +18,7 @@ melo = \relative c' {
   \mark \parteA
   \repeat volta 2 {
     \repeat unfold 3 {
-      bes4 ees c8 ees4. | d8 ees e f~ f2 
+      bes4 ees c8 ees4. | d8 ees e f~ f2 \ocultar-clave
     }
     r8 g g4 g bes
     g8 f4 es8~ es2 |
