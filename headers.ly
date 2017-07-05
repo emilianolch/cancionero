@@ -28,11 +28,10 @@
   page-breaking = #ly:minimal-breaking
   markup-system-spacing = #'((basic-distance . 30)
                              (minimum-distance . 20))
-                              
   system-system-spacing = #'((minimum-distance . 15)
                              (basic-distance . 20))
   top-margin = 10
-  bottom-margin = 10
+  bottom-margin = 15
   left-margin = 15
   right-margin = 15
 }
@@ -46,6 +45,8 @@ outro = \markup { \box OUTRO }
 parteA = \markup { \box A }
 parteB = \markup { \box B }
 parteC = \markup { \box C }
+
+ocultar-clave = \override Staff.Clef #'stencil = ##f 
 
 fin = \bar "|."
 dbar = \bar "||"

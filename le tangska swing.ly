@@ -1,7 +1,7 @@
 \include "headers.ly"
 
 \header {
-  title = "Le Tangska Swing"
+  title = \markup { \abs-fontsize #32 "Le Tangska Swing" }
   composer = "Miguel Pérez"
   poet = "Swing"
   meter = "Solos en A. Tocar B-INTRO entre solos."
@@ -31,6 +31,8 @@ melo = \relative c'' {
   g2 bes | a1 | g2 d' a2. a4 |
   \dbar
   \break
+  
+  \ocultar-clave
   
   \mark \parteA
   \repeat volta 2 {
