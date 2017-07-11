@@ -4,9 +4,15 @@
   title = \markup { \abs-fontsize #32 "Salvador Swing" }
   composer = "Lucho Splif"
   poet = "Swing"
+  meter = "Solos: A-B"
 }
 
 cifrado =  \chords {
+  \repeat unfold 4 { 
+    bes2 bes:7 | g:7 c:7 | ees:7 e:dim | f f:7 |
+  }
+  c c:7 | cis1:dim1 | f2 f:7 | fis1:dim | 
+  bes2 bes:7 | g:7 ees:7 | e:dim f:7 | f1:7 |
 }
 
 melo = \relative c' {
