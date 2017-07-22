@@ -1,5 +1,11 @@
 \include "headers.ly"
 
+\paper {
+    system-system-spacing = #'((minimum-distance . 10)
+                             (basic-distance . 20))
+}
+
+
 \header {
   title = \markup { \abs-fontsize #32 "Salvador Swing" }
   composer = "Lucho Splif"
@@ -49,8 +55,7 @@ melo = \relative c' {
   
   r8 f g a d a d a | ees'1 |
   d,2 d |  des2. des8 des |
-  \break
-  
+    
   f2 f | aes aes4. aes8 |
   c d g, a d f, r4 | c'04 d8 g, a d  f,4 |
   bes4 r2.

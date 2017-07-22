@@ -3,7 +3,7 @@
 \layout {
   \context {
     \ChordNames
-    \override ChordName.font-size = #7
+    \override ChordName.font-size = #6
     %\override ChordName.font-name = "FreeSans"
     \override ChordName.font-series = #'bold
   }
@@ -15,7 +15,11 @@
   \set chordChanges = ##t
   \set noChordSymbol = ""
   \set minorChordModifier = \markup { "-" }
-  
+  \set majorSevenSymbol = \markup { 
+    \override #'(thickness . 0.25)
+    \override #'(baseline-skip . 2)    
+    \triangle ##f
+  }
   
   %\set Score.markFormatter = #format-mark-box-alphabet
   
@@ -50,14 +54,21 @@ ocultar-clave = \override Staff.Clef #'stencil = ##f
 fin = \bar "|."
 dbar = \bar "||"
 
-coda = \mark \markup { \abs-fontsize #20 \musicglyph #"scripts.coda" }
+coda = \mark \markup { \abs-fontsize #18 \musicglyph #"scripts.coda" }
+coda-markup = \markup { 
+  \hspace #4
+  \abs-fontsize #18 
+  \musicglyph #"scripts.coda" 
+}
 
-break-tag = \markup { \italic \bold \large \text "break" }
+break-tag = \markup { \italic \large \text "break" }
 
-break-in = \set Score.repeatCommands = 
-  #(list(list 'volta break-tag))
+break-in = {
+  \ottava #1
+  \set Staff.ottavation = #"break"
+}
   
-break-out = \set Score.repeatCommands = #'((volta #f))
+break-out = \ottava #0
 
 
 % Function to print a specified number of slashes

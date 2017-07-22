@@ -2,11 +2,19 @@
 
 \header {
   title = \markup { \abs-fontsize #32 "Ana Clara Swing" }
-  composer = "Duba"
+  composer = "Duba & Gamal Darián"
   poet = "Swing"
 }
 
 cifrado =  \chords {
+  bes2 c:m7 | des:m7 d:m7 | des:m7 c:m7 | bes1 |
+  bes2 c:m7 | des:m7 d:m7 | des:m7 c:m7 | bes1:7
+  ees1 | ees2:m g:7 | a1:m7.5- | g4:m fis:7 c:7 f:sus4 |
+  c2:m7 d:7 | ees:maj7 c:aug7/e | f1:sus4 | r |
+  
+  %coda
+  b4 g:7 c:7 f:sus4 | d:m7 des:7 c:m7 ces8:7 bes
+
 }
 
 melo = \relative c' {
@@ -29,9 +37,13 @@ melo = \relative c' {
   \break
   
   f'8 des' c fis,~ fis des' c g~ | g des' c gis~ gis des' c f, |
-  bes f, g ees' cis d  bes bes | r1
+  bes^\break-tag f, g ees' cis d  bes bes^\coda-markup | r1 
+  \fin
+  \break
   
-  \fin  
+  \coda
+  r8 f' g ees' cis d  bes bes | \ottava #1 r8 f g ees' cis d  bes bes'
+  \fin
 }
 
 <<

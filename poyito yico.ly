@@ -43,18 +43,18 @@ melo = \relative c'' {
   aes4. g8 f ees4 d8~ | d8 bes4 bes2 bes8 | 
   d d cis d4 f f8~ | f2 g4 bes |
   aes4. g8 f ees4 d8~ | d8 bes4 bes2 bes8 | 
-  d d ees ees e e f bes | r2^\markup { \italic "break" } bes,8 bes c d~ |
+  d d ees ees e e f bes | r2^\markup { \italic "break!" } bes,8 bes c d~ |
   \break
 
   \mark \parteA
-  d4 f2.~ | f2 d8 c cis d~ | d4 g2.~ | g2 d8 cis d4 \coda \noBreak |
-  d bes bes g8 bes~ | bes2 d8 cis d d~ | d4 bes f'8 e ees d~ | d2 r2 |
+  d4 f2.~ | f2 d8 c cis d~ | d4 g2.~ | g2 d8 cis d4^\coda-markup |
+  d bes bes g8 bes~ | bes2 d8 cis d d~ | d4 bes f'8 fes ees d~ | d2 r2 |
   \fin
   \break
   
   % Coda
   \coda
-  d4 bes bes g8 bes~ | bes2 d8 cis d d~ | d4 bes f'8 e ees d~ |   
+  d4 bes bes g8 bes~ | bes2 d8 cis d d~ | d4 bes f'8 fes ees d~ |   
   d2 d8 cis d d~ | d4 bes bes'8 a g f~ | f4 f g8 f g bes~ | bes1~ | bes
    
   \fin
