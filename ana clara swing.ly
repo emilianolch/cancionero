@@ -42,7 +42,7 @@ melo = \relative c' {
   \break
   
   \coda
-  r8 f' g ees' cis d  bes bes | \ottava #1 r8 f g ees' cis d  bes bes'
+  r8 f' g ees' cis d  bes bes | \ottava #1 r8 f' g ees' cis d  bes bes'
   \fin
 }
 

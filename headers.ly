@@ -37,6 +37,8 @@
   bottom-margin = 15
   left-margin = 15
   right-margin = 15
+  
+  indent = 0
 }
 
 \header {
