@@ -33,12 +33,15 @@
                              (minimum-distance . 20))
   system-system-spacing = #'((minimum-distance . 15)
                              (basic-distance . 20))
+  score-system-spacing = #'((basic-distance . 25)
+                            (minimum-distance . 20))
   top-margin = 10
   bottom-margin = 15
   left-margin = 15
   right-margin = 15
   
   indent = 0
+  ragged-right = ##f 	% los pentagramas ocupan todo el ancho de la hoja
 }
 
 \header {
@@ -52,11 +55,18 @@ parteB = \markup { \box B }
 parteC = \markup { \box C }
 
 ocultar-clave = \override Staff.Clef #'stencil = ##f 
+%ocultar-clave = \override Staff.Clef.break-visibility = #all-invisible
 
 fin = \bar "|."
 dbar = \bar "||"
 
-coda = \mark \markup { \abs-fontsize #18 \musicglyph #"scripts.coda" }
+coda = { 
+  \ocultar-clave
+  \override Staff.TimeSignature #'stencil = ##f
+  \mark \markup { \abs-fontsize #18 \musicglyph #"scripts.coda" }
+}
+
+
 coda-markup = \markup { 
   \hspace #4
   \abs-fontsize #18 
