@@ -33,8 +33,8 @@
                              (minimum-distance . 20))
   system-system-spacing = #'((minimum-distance . 15)
                              (basic-distance . 20))
-  score-system-spacing = #'((basic-distance . 25)
-                            (minimum-distance . 20))
+  score-system-spacing = #'((basic-distance . 28)
+                            (minimum-distance . 22))
   top-margin = 10
   bottom-margin = 15
   left-margin = 15
