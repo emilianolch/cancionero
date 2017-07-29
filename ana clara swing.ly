@@ -11,10 +11,6 @@ cifrado =  \chords {
   bes2 c:m7 | des:m7 d:m7 | des:m7 c:m7 | bes1:7
   ees1 | ees2:m g:7 | a1:m7.5- | g4:m fis:7 c:7 f:sus4 |
   c2:m7 d:7 | ees:maj7 c:aug7/e | f1:sus4 | r |
-  
-  %coda
-  b4 g:7 c:7 f:sus4 | d:m7 des:7 c:m7 ces8:7 bes
-
 }
 
 melo = \relative c' {
@@ -39,14 +35,34 @@ melo = \relative c' {
   f'8 des' c fis,~ fis des' c g~ | g des' c gis~ gis des' c f, |
   bes^\break-tag f, g ees' cis d  bes bes^\coda-markup | r1 
   \fin
-  \break
-  
-  \coda
-  r8 f' g ees' cis d  bes bes | \ottava #1 r8 f' g ees' cis d  bes bes'
-  \fin
 }
 
-<<
-  \cifrado
-  \melo
->>
+\score {
+  <<
+    \cifrado
+    \melo
+  >>
+  
+  \layout {
+    \override ChordNames.ChordName.font-size = #4
+  }
+}
+
+\score {
+  <<
+    \chords {
+      bes4 g:7 c:7.9- f:sus4 | d:m7 des:7 c:m7 b8:7 bes
+    }
+    
+    \relative c' {
+      \key bes \major
+      \coda
+      r8 f g ees' cis d  bes bes | \ottava #1 r8 f' g ees' cis d  bes bes'
+      \fin
+  }
+  >>
+  
+  \layout {
+    \override ChordNames.ChordName.font-size = #4
+  }
+}

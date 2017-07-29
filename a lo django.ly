@@ -39,7 +39,7 @@ melo = \relative c''' {
 \score {
   <<
     \chords {
-      r8 | b2:m7.5- e:7 | a1 | b2:m7.5- e:7 | a1 |
+      r8 | b2:m7.5- e:7 | a1:m | b2:m7.5- e:7 | a1:m |
     }
     \relative c'' {
       \coda

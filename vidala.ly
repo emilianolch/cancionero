@@ -8,7 +8,7 @@
 
 cifrado =  \chords {
   r2 a1:m a:m a:m g:7 g:7 c c
-  \repeat volta 2 { c d c d c e:7 a:m }
+  \repeat volta 2 { \show-chord c d c d c e:7 a:m }
   \alternative { { a:m } { a:m } }
 
   g:7 g:7 c c

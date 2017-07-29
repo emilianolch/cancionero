@@ -9,7 +9,7 @@
   }
   \context {
       \Score
-      \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/16)
+      %\override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/16)
       defaultBarType = "."
   }
   \set chordChanges = ##t
@@ -24,8 +24,6 @@
   %\set Score.markFormatter = #format-mark-box-alphabet
   
 }
-
-
 
 \paper {
   page-breaking = #ly:minimal-breaking
@@ -59,6 +57,8 @@ ocultar-clave = \override Staff.Clef #'stencil = ##f
 
 fin = \bar "|."
 dbar = \bar "||"
+
+show-chord = \once \set chordChanges = ##f
 
 coda = { 
   \ocultar-clave

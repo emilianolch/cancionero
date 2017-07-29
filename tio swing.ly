@@ -28,12 +28,10 @@ A = \relative c'' {
 melo = {
   \key d \major
   \A
-  \dbar
   \break
   
   \mark \parteB
   \repeat unfold 8 \comp #4
-  \dbar
   \break
   
   \A

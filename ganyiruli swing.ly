@@ -25,11 +25,13 @@ melo = \relative c' {
   }
   
   \break
+  
   \mark \parteB
   fis4 g fis8 g4 fis8 | g fis4 c'8~ c2 |
   f,4 ges f8 ges4 f8 | ges f4 bes8~ bes2 |
-  d,8 es e f fis g aes a | bes4 f ees2^\markup { \italic "break!"} |
-  
+  \break
+  d,8 es e f fis g aes a | bes4 f ees2^\break-tag |
+  \break  
   bes4 ees c8 ees4. | d8 ees e f~ f2 |
   bes,4 ees c8 cis d ees | f4 g ees2
   

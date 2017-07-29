@@ -21,7 +21,10 @@ melo = \relative c'' {
   
   \mark \parteA
   \repeat volta 2 {
-    e8 dis dis e dis e | c2 dis4 | b2 c4 | fis,2. \ocultar-clave | 
+    e8 dis dis e dis e | c2 dis4 | b2 c4 | fis,2.|
+    \break
+    \ocultar-clave
+    
     e'8 dis dis e dis e | c2 dis4 | b4. c8 b dis | e2. |
   }
   \break

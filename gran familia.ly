@@ -45,11 +45,11 @@ melo = \relative c'' {
   
   \repeat volta 3 {
     a^\markup { \italic "Repite 3 veces sólo en la última vuelta." }
-    c cis d fis8 f e ees |  d cis c cis e d c gis
+    c cis d fis8 f e ees \noBreak |  d cis c cis e d c gis
   }
   
   a1| 
-  r1
+  r2
   \fin
   \break
 }
