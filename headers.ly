@@ -73,6 +73,12 @@ coda-markup = \markup {
   \musicglyph #"scripts.coda" 
 }
 
+segno-markup = \markup {
+  %\hspace #4
+  %\abs-fontsize #18
+  \musicglyph #"scripts.segno"
+}
+
 break-tag = \markup { \italic \large \text "break" }
 
 break-in = {
