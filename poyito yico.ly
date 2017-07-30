@@ -30,7 +30,7 @@ melo = \relative c'' {
     \ocultar-clave
     \mark \parteA
     d4 f2.~ | f2 d8 c cis d~ | d4 g2.~ | g2 d8 cis d4 |
-    d bes bes g8 bes~ | bes2 d8 cis d d~ | d4 bes f'8 e ees d~ | d2 
+    d bes bes g8 bes~ | bes2 d8 cis d d~ | d4 bes f'8 fes ees d~ | d2 
   }
   
   g4 bes |

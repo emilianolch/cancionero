@@ -10,7 +10,7 @@
   title = \markup { \abs-fontsize #32 "Salvador Swing" }
   composer = "Lucho Splif"
   poet = "Swing"
-  meter = "Solos: A-B"
+  meter = "En los solos tocar sólo la parte A."
 }
 
 cifrado =  \chords {
@@ -18,7 +18,13 @@ cifrado =  \chords {
     bes2 bes:7 | g:7 c:7 | ees:7 e:dim | f f:7 |
   }
   c c:7 | cis1:dim1 | f2 f:7 | fis1:dim | 
-  bes2 bes:7 | g:7 ees:7 | e:dim f:7 | f1:7 |
+  bes2 bes:7 | g:7 ees:7 | e:dim f:7 | ees ees:7 |
+  
+  fis1:dim | bes2 bes:7 | cis1:dim | f2 f:7 | gis1:dim |
+  ees2 e:dim | d:aug fis4 f:7 | bes1 | bes |
+  
+  b:dim | ees2. e4:dim | e1:dim |
+  d:7 | g2:7 f:7 | bes1 |
 }
 
 melo = \relative c' {
@@ -51,8 +57,6 @@ melo = \relative c' {
   f4 g gis8 a bes4 | g fis  g bes |
   \break
   
-  \mark \parteB
-  
   r8 f g a d a d a | ees'1 |
   d,2 d |  des2. des8 des |
     
@@ -62,7 +66,7 @@ melo = \relative c' {
   \dbar
   \break
   
-  \mark \parteC
+  \mark \parteB
   r4. a8 gis4 a | ees'2 ees8 d e4 |
   \tuplet 3/2 { bes, d ges } \tuplet 3/2 { d' des c } | a4. a g8 f |
   r f g a d a d a | bes4 r2. 
@@ -70,7 +74,13 @@ melo = \relative c' {
   \fin
 }
 
-<<
-  \cifrado
-  \melo
->>
+\score {
+  <<
+    \cifrado
+    \melo
+  >>
+  
+  \layout {
+    \override ChordNames.ChordName.font-size = #4
+  }
+}

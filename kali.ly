@@ -1,7 +1,7 @@
 \include "headers.ly"
 
 \header {
-  title = \markup { \smallCaps \abs-fontsize #32 "Kali" }
+  title = \markup { \abs-fontsize #32 "Kali" }
   composer = "Duba"
   poet = "Balada"
   meter = "Forma: A-B-A (Solo: B-A-B)"
@@ -39,6 +39,7 @@ meloUno = \relative c'' {
   \break
   c des4 ees4. des8 c~ | c aes f aes~ aes4 r8 f |
   c' des4 ees4. des8 c~ | c aes' ges  f ees ces bes g |  
+  \fin
 }
 
 meloDos = \relative c' {
@@ -55,6 +56,7 @@ meloDos = \relative c' {
   aes' bes4 c4. bes8 aes~ | aes c ces bes aes bes f ees |
   aes bes4 c4. bes8 aes~ | aes ees c ees~ ees4 r8 c |
   aes' bes4 c4. bes8 aes~ | aes c ces bes aes f ees ees,_\indicacionFinal |
+  \fin
 }
 
 \score {
