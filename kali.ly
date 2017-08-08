@@ -8,6 +8,13 @@
 }
 
 cifrado =  \chords {
+  \partial 8 { r8 }
+  bes1:m | f:m | aes:maj7 | c:m |
+  aes:maj7 | b2:dim c:7 | f1:m | b2:dim c:7 |
+  
+  aes1:maj7 | c:m | f:m | g2:m7.5- c:7 |
+  f1:m | c:7 | g2:m7.5- c:7 | g:m7.5- c:7 |
+ 
 }
 
 indicacionFinal = \markup {
@@ -88,6 +95,7 @@ codaDos = \relative c' {
 \score {
   <<
     \chords {
+       b2:dim c:7 | g:m7.5- c:7 | \tuplet 3/2 { des4:7 ges:6 c:7 } f2:m |
     }
     \new Staff \codaUno
     \new Staff \codaDos
