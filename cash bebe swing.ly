@@ -12,6 +12,7 @@ cifrado =  \chords {
 
 melo = \relative c' {
   \partial 8 { d''8 }
+  \ocultar-clave
   
   d c fis, g a fis c d | b2. r8 c'8 | c g e f g e b c | a g' e fis2 b8 |
   \break
