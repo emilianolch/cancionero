@@ -1,11 +1,5 @@
 \include "headers.ly"
 
-\header {
-  title = \markup { \abs-fontsize #32 "Duba Swing" }
-  composer = "Lucho Splif"
-  poet = "Swing"
-}
-
 cifrado =  \chords {
   g1:m7.5- | f:m | g:m7.5- |  c:7 |
   f:m | g:m7.5- | bes2:m7.5- c:7.5- |
@@ -19,7 +13,6 @@ cifrado =  \chords {
 
 melo = \relative c''' {
   \key f \minor
-
   
   \repeat volta 2 {
     r4. f8 e f c aes~ | aes4. f'8 e f des bes | 
@@ -34,16 +27,20 @@ melo = \relative c''' {
   \break
   c aes e c e g e des~ | des4 c r4. des8 |
   \break
-  
-  
-  
-  
-  
+
 }
 
-\score {
-  <<
-    \cifrado
-    \melo
-  >>
+\bookpart {
+  \header {
+    title = \markup { \abs-fontsize #32 "Duba Swing" }
+    composer = "Lucho Splif"
+    poet = "Swing"
+  }
+  
+  \score {
+    <<
+      \cifrado
+      \melo
+    >>
+  }
 }

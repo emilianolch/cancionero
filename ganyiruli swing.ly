@@ -1,11 +1,5 @@
 \include "headers.ly"
 
-\header {
-  title = \markup { \abs-fontsize #32 "Ganyiruli Swing" }
-  composer = "Miguel Pérez"
-  poet = "Swing"
-}
-
 cifrado =  \chords {
   \repeat unfold 4 { ees2 c:min | bes1:7 }
   d:7 | g:7 | c:7 | f | bes:7 | bes2:7 ees |
@@ -38,7 +32,19 @@ melo = \relative c' {
   \fin
 }
 
-<<
-  \cifrado
-  \melo
->>
+\bookpart {
+  \header {
+    title = \markup { \abs-fontsize #32 "Ganyiruli Swing" }
+    composer = "Miguel Pérez"
+    poet = "Swing"
+  }
+
+  \score {
+
+
+    <<
+      \cifrado
+      \melo
+    >>
+  }
+}

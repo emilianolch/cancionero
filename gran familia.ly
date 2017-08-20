@@ -1,11 +1,5 @@
 \include "headers.ly"
 
-\header {
-  title = \markup { \abs-fontsize #32 "Gran Familia" }
-  composer = "Miguel Pérez"
-  poet = "Swing"
-}
-
 cifrado =  \chords {
   \partial 2 r2 | 
   a1 | a2. fis4:7 | e2:7 b:m | e1:7 |
@@ -54,7 +48,16 @@ melo = \relative c'' {
   \break
 }
 
-<<
-  \cifrado
-  \melo
->>
+\bookpart {
+  
+  \header {
+  title = \markup { \abs-fontsize #32 "Gran Familia" }
+  composer = "Miguel Pérez"
+  poet = "Swing"
+  }
+  
+  <<
+    \cifrado
+    \melo
+  >>
+}

@@ -1,10 +1,5 @@
 \include "headers.ly"
 
-\header {
-  title = \markup { \abs-fontsize #32 "Bici Swing" }
-  composer = "Lucho Splif"
-  poet = "Swing"
-}
 
 cifrado =  \chords {
   \partial 8 { r8 }
@@ -47,7 +42,15 @@ melo = \relative c' {
   \fin
 }
 
-<<
-  \cifrado
-  \melo
->>
+\bookpart {
+  \header {
+    title = \markup { \abs-fontsize #32 "Bici Swing" }
+    composer = "Lucho Splif"
+    poet = "Swing"
+  }
+  
+  <<
+    \cifrado
+    \melo
+  >>
+}

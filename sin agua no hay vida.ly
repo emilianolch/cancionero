@@ -1,11 +1,5 @@
 \include "headers.ly"
 
-\header {
-  title = \markup { \abs-fontsize #32 "Sin agua no hay vida" }
-  composer = "Roberto Rodríguez"
-  poet = "Swing"
-}
-
 cifrado =  \chords {
 }
 
@@ -34,7 +28,15 @@ melo = \relative c' {
   c8^\markup { \italic \bold Presto } c4 ees4. c4 |
 }
 
-<<
-  \cifrado
-  \melo
->>
+\bookpart {
+  \header {
+    title = \markup { \abs-fontsize #32 "Sin agua no hay vida" }
+    composer = "Roberto Rodríguez"
+    poet = "Swing"
+  }
+
+  <<
+    \cifrado
+    \melo
+  >>
+}

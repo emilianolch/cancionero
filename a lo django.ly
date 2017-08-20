@@ -1,11 +1,5 @@
 \include "headers.ly"
 
-\header {
-  title = \markup { \abs-fontsize #32 "A lo Django" }
-  composer = "Giorgio Salinas"
-  poet = "Swing"
-}
-
 cifrado =  \chords {
   r8 | a1:m | b:m7.5- | e:7 | a2:m e:7 |
   a1:m | b:m7.5- | e:7 | a:m |
@@ -29,23 +23,32 @@ melo = \relative c''' {
   \fin
 }
 
-\score {
-  <<
-    \cifrado
-    \melo
-  >>
-}
 
-\score {
-  <<
-    \chords {
-      r8 | b2:m7.5- e:7 | a1:m | b2:m7.5- e:7 | a1:m |
-    }
-    \relative c'' {
-      \coda
-      \partial 8 { e8 } |
-      ees4 d c b | b8[ a] gis a2 e'8 | ees4 d c b\fermata | a1\fermata |
-      \fin
-    }
-  >>
+\bookpart {
+  \header {
+    title = \markup { \abs-fontsize #32 "A lo Django" }
+    composer = "Giorgio Salinas"
+    poet = "Swing"
+  }
+
+  \score {
+    <<
+      \cifrado
+      \melo
+    >>
+  }
+
+  \score {
+    <<
+      \chords {
+        r8 | b2:m7.5- e:7 | a1:m | b2:m7.5- e:7 | a1:m |
+      }
+      \relative c'' {
+        \coda
+        \partial 8 { e8 } |
+        ees4 d c b | b8[ a] gis a2 e'8 | ees4 d c b\fermata | a1\fermata |
+        \fin
+      }
+    >>
+  }
 }

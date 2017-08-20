@@ -1,12 +1,5 @@
 \include "headers.ly"
 
-\header {
-  title = \markup { \abs-fontsize #32 "We are not the Biciswing" }
-  subtitle = "(Nosotros no somos los Biciswing)"
-  composer = "Giorgio Salinas"
-  poet = "Gipsy Bossa"
-}
-
 cifrado =  \chords {
   %intro
   \repeat unfold 2  {
@@ -59,7 +52,16 @@ melo = \relative c' {
   \fin  
 }
 
-<<
-  \cifrado
-  \melo
->>
+\bookpart {
+  \header {
+    title = \markup { \abs-fontsize #32 "We are not the Biciswing" }
+    subtitle = "(Nosotros no somos los Biciswing)"
+    composer = "Giorgio Salinas"
+    poet = "Gipsy Bossa"
+  }
+
+  <<
+    \cifrado
+    \melo
+  >>
+}

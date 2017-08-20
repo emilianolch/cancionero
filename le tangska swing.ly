@@ -1,11 +1,5 @@
 \include "headers.ly"
 
-\header {
-  title = \markup { \abs-fontsize #32 "Le Tangska Swing" }
-  composer = "Miguel Pérez"
-  poet = "Swing"
-  meter = "Solos en A. Tocar B-INTRO entre solos."
-}
 
 cifrado =  \chords {
   g2:min bes | a1:7 | g2:min bes | a1:7 |
@@ -61,7 +55,16 @@ melo = \relative c'' {
   \fin
 }
 
-<<
-  \cifrado
-  \melo
->>
+\bookpart {
+  \header {
+    title = \markup { \abs-fontsize #32 "Le Tangska Swing" }
+    composer = "Miguel Pérez"
+    poet = "Swing"
+    meter = "Solos en A. Tocar B-INTRO entre solos."
+  }
+
+  <<
+    \cifrado
+    \melo
+  >>
+}

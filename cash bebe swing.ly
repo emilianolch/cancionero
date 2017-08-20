@@ -1,11 +1,5 @@
 \include "headers.ly"
 
-\header {
-  title = \markup { \abs-fontsize #32 "Cash Bebe Swing" }
-  subtitle = "(Swing para Cayetano Indio)"
-  composer = "Lucho Splif"
-  poet = "Swing"
-}
 
 cifrado =  \chords {
 }
@@ -32,9 +26,18 @@ melo = \relative c' {
   \fin  
 }
 
-\score {
-  <<
-    \cifrado
-    \melo
-  >>
+\bookpart {
+  \header {
+    title = \markup { \abs-fontsize #32 "Cash Bebe Swing" }
+    subtitle = "(Swing para Cayetano Indio)"
+    composer = "Lucho Splif"
+    poet = "Swing"
+  }
+  
+  \score {
+    <<
+      \cifrado
+      \melo
+    >>
+  }
 }

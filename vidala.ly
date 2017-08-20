@@ -1,11 +1,5 @@
 \include "headers.ly"
 
-\header {
-  title = \markup { \abs-fontsize #32 "Vidala" }
-  composer = "Cocho López"
-  poet = "Swing"
-}
-
 cifrado =  \chords {
   r2 a1:m a:m a:m g:7 g:7 c c
   \repeat volta 2 { \show-chord c d c d c e:7 a:m }
@@ -35,7 +29,7 @@ respClarinete = \relative c'' {
   r4 c b2
   a1
 }
-  
+
 
 flauta = {
   \relative c'' {
@@ -98,8 +92,16 @@ clarinete = \relative c'' {
   \bar "|."
 }
 
-<<
-  \cifrado
-  \new Staff \flauta
-  \new Staff \clarinete
->>
+\bookpart {
+  \header {
+    title = \markup { \abs-fontsize #32 "Vidala" }
+    composer = "Cocho López"
+    poet = "Swing"
+  }
+
+  <<
+    \cifrado
+    \new Staff \flauta
+    \new Staff \clarinete
+  >>
+}

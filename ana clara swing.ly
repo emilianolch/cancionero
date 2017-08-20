@@ -1,11 +1,5 @@
 \include "headers.ly"
 
-\header {
-  title = \markup { \abs-fontsize #32 "Ana Clara Swing" }
-  composer = "Duba & Gamal Darián"
-  poet = "Swing"
-}
-
 cifrado =  \chords {
   bes2 c:m7 | des:m7 d:m7 | des:m7 c:m7 | bes1 |
   bes2 c:m7 | des:m7 d:m7 | des:m7 c:m7 | bes1:7
@@ -37,32 +31,41 @@ melo = \relative c' {
   \fin
 }
 
-\score {
-  <<
-    \cifrado
-    \melo
-  >>
-  
-  \layout {
-    \override ChordNames.ChordName.font-size = #4
+\bookpart {
+  \header {
+    title = \markup { \abs-fontsize #32 "Ana Clara Swing" }
+    composer = "Duba & Gamal Darián"
+    poet = "Swing"
   }
-}
 
-\score {
-  <<
-    \chords {
-      bes4 g:7 c:7.9- f:sus4 | d:m7 des:7 c:m7 b8:7 bes
-    }
-    
-    \relative c' {
-      \key bes \major
-      \coda
-      r8 f g ees' cis d  bes bes | \ottava #1 r8 f' g ees' cis d  bes bes'
-      \fin
-  }
-  >>
+
+  \score {
+    <<
+      \cifrado
+      \melo
+    >>
   
-  \layout {
-    \override ChordNames.ChordName.font-size = #4
+    \layout {
+      \override ChordNames.ChordName.font-size = #4
+    }
+  }
+
+  \score {
+    <<
+      \chords {
+        bes4 g:7 c:7.9- f:sus4 | d:m7 des:7 c:m7 b8:7 bes
+      }
+    
+      \relative c' {
+        \key bes \major
+        \coda
+        r8 f g ees' cis d  bes bes | \ottava #1 r8 f' g ees' cis d  bes bes'
+        \fin
+      }
+    >>
+  
+    \layout {
+      \override ChordNames.ChordName.font-size = #4
+    }
   }
 }

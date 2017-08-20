@@ -1,12 +1,5 @@
 \include "headers.ly"
 
-\header {
-  title = \markup { \abs-fontsize #32 "Gypsy Vals" }
-  composer = "Lucho Splif"
-  poet = "Vals"
-  meter = "Tocar A antes de cada solo."
-}
-
 cifrado =  \chords {
   e2.:min | e:m7+ | e:min | a:min |
   e2.:min | e:m7+ | e:min | a:min |
@@ -42,7 +35,17 @@ melo = \relative c'' {
   
 }
 
-<<
-  \cifrado
-  \melo
->>
+\bookpart {
+  \header {
+    title = \markup { \abs-fontsize #32 "Gypsy Vals" }
+    composer = "Lucho Splif"
+    poet = "Vals"
+    meter = "Tocar A antes de cada solo."
+  }
+
+
+  <<
+    \cifrado
+    \melo
+  >>
+}

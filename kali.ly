@@ -1,12 +1,5 @@
 \include "headers.ly"
 
-\header {
-  title = \markup { \abs-fontsize #32 "Kali" }
-  composer = "Duba"
-  poet = "Balada"
-  meter = "Forma: A-B-A (Solo: B-A-B)"
-}
-
 cifrado =  \chords {
   \partial 8 { r8 }
   bes1:m | f:m | aes:maj7 | c:m |
@@ -19,16 +12,16 @@ cifrado =  \chords {
 
 indicacionFinal = \markup {
   \halign #0.5 {
-  \column {
-    \line { \italic "Primera vuelta: D.C. al Fine" }
-    \line { \italic "Ultima vuelta: D.C. al" \raise #1 \musicglyph #"scripts.coda" }
+    \column {
+      \line { \italic "Primera vuelta: D.C. al Fine" }
+      \line { \italic "Ultima vuelta: D.C. al" \raise #1 \musicglyph #"scripts.coda" }
+    }
   }
-}
 }
 
 meloUno = \relative c'' {
   \key f \minor
-    
+  
   \partial 8 { g8 }
   \mark \parteA
   \ocultar-clave
@@ -66,14 +59,6 @@ meloDos = \relative c' {
   \fin
 }
 
-\score {
-  <<
-    \cifrado
-    \new Staff \meloUno
-    \new Staff \meloDos
-  >>
-}
-
 codaUno = \relative c' {
   \coda
   \key f \minor
@@ -92,12 +77,29 @@ codaDos = \relative c' {
   \fin
 }
 
-\score {
-  <<
-    \chords {
-       b2:dim c:7 | g:m7.5- c:7 | \tuplet 3/2 { des4:7 ges:6 c:7 } f2:m |
-    }
-    \new Staff \codaUno
-    \new Staff \codaDos
-  >>
+\bookpart {
+  \header {
+    title = \markup { \abs-fontsize #32 "Kali" }
+    composer = "Duba"
+    poet = "Balada"
+    meter = "Forma: A-B-A (Solo: B-A-B)"
+  }	
+
+  \score {
+    <<
+      \cifrado
+      \new Staff \meloUno
+      \new Staff \meloDos
+    >>
+  }
+
+  \score {
+    <<
+      \chords {
+        b2:dim c:7 | g:m7.5- c:7 | \tuplet 3/2 { des4:7 ges:6 c:7 } f2:m |
+      }
+      \new Staff \codaUno
+      \new Staff \codaDos
+    >>
+  }
 }

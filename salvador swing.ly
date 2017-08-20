@@ -1,17 +1,5 @@
 \include "headers.ly"
 
-\paper {
-    system-system-spacing = #'((minimum-distance . 10)
-                             (basic-distance . 20))
-}
-
-
-\header {
-  title = \markup { \abs-fontsize #32 "Salvador Swing" }
-  composer = "Lucho Splif"
-  poet = "Swing"
-  meter = "En los solos tocar sólo la parte A."
-}
 
 cifrado =  \chords {
   \repeat unfold 4 { 
@@ -59,7 +47,7 @@ melo = \relative c' {
   
   r8 f g a d a d a | ees'1 |
   d,2 d |  des2. des8 des |
-    
+  
   f2 f | aes aes4. aes8 |
   c d g, a d f, r4 | c'04 d8 g, a d  f,4 |
   bes4 r2.
@@ -74,13 +62,27 @@ melo = \relative c' {
   \fin
 }
 
-\score {
-  <<
-    \cifrado
-    \melo
-  >>
+\bookpart {
+  \paper {
+    system-system-spacing = #'((minimum-distance . 10)
+                               (basic-distance . 20))
+  }
+
+  \header {
+    title = \markup { \abs-fontsize #32 "Salvador Swing" }
+    composer = "Lucho Splif"
+    poet = "Swing"
+    meter = "En los solos tocar sólo la parte A."
+  }
+
+  \score {
+    <<
+      \cifrado
+      \melo
+    >>
   
-  \layout {
-    \override ChordNames.ChordName.font-size = #4
+    \layout {
+      \override ChordNames.ChordName.font-size = #4
+    }
   }
 }

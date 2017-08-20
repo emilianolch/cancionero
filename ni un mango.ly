@@ -1,14 +1,7 @@
 \include "headers.ly"
 
-\header {
-  title = \markup { \abs-fontsize #32 "Ni un mango" }
-  composer = "Lucho Splif"
-  poet = "Swing"
-  meter = "Forma: A-A-B-A"
-}
-
 cifrado =  \chords {
- e2:7 ees:7 | d:7 des:7 | c1 | g:7 |
+  e2:7 ees:7 | d:7 des:7 | c1 | g:7 |
  
   c2 a:m7 | d:m7 g:7 | e:7 a:m7 | d:7 g:7 |
   e:7 ees:7 | d:7 des:7 | c1 | g:7 | c |
@@ -46,10 +39,19 @@ melo = \relative c'' {
   d'4 d c8 d c4 | c c b8 c b4 | b b a8 b4 e,8 | 
   g8 b2 g8 \tuplet 3/2 { a ais b_\markup { \italic "D.S. al Fine" } }
   \fin
-                        
+  
 }
 
-<<
-  \cifrado
-  \melo
->>
+\bookpart {
+  \header {
+    title = \markup { \abs-fontsize #32 "Ni un mango" }
+    composer = "Lucho Splif"
+    poet = "Swing"
+    meter = "Forma: A-A-B-A"
+  }
+
+  <<
+    \cifrado
+    \melo
+  >>
+}
