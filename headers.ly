@@ -99,3 +99,4 @@ comp = #(define-music-function (parser location count) ( integer?)
             \revert Rest #'stencil
           #}
           )
+     

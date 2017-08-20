@@ -1,4 +1,10 @@
-\include "headers.ly"
+\bookpart {
+  \header {
+    title = \markup { \abs-fontsize #32 \smallCaps "Cancionero de la Calle"}
+    subtitle = "Primera edición incompleta"
+  }
+  \markup {}
+}
 
 \include "a lo django.ly"
 \include "ana clara swing.ly"
