@@ -13,8 +13,8 @@ cifrado =  \chords {
 indicacionFinal = \markup {
   \halign #0.5 {
     \column {
-      \line { \italic "Primera vuelta: D.C. al Fine" }
-      \line { \italic "Ultima vuelta: D.C. al" \raise #1 \musicglyph #"scripts.coda" }
+      \line { "Primera vuelta: D.C. al Fine" }
+      \line { "Ultima vuelta: D.C. al" \raise #1 \musicglyph #"scripts.coda" }
     }
   }
 }
@@ -30,7 +30,7 @@ meloUno = \relative c'' {
   ees2. \tuplet 3/2 { aes8 g aes } | f ees \tuplet 3/2 { des ees c~ } c4 aes8 c~ |
   \break
   c2 r8 aes c des | \tuplet 3/2 { ees f f } \tuplet 3/2 { ees des des } \tuplet 3/2 { c bes bes } aes4\staccato^\coda-markup |
-  aes'1~ | aes2..^\markup { \italic Fine } aes,8 | 
+  aes'1~ | aes2..^Fine aes,8 | 
   \break
   
   \mark \parteB

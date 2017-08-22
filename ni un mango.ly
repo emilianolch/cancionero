@@ -28,7 +28,7 @@ melo = \relative c'' {
     c4 r2. |
   }
   \alternative {
-    { r2^\markup { \italic "Fine" } r8 g8 \tuplet 3/2 { a ais b } }
+    { r2^"Fine" r8 g8 \tuplet 3/2 { a ais b } }
     { r1 }
   }
   \break
@@ -37,7 +37,7 @@ melo = \relative c'' {
   d4 d c8 d c4 | c c b8 c b4 | b b a8 b4 e,8 | g1 |
   \break
   d'4 d c8 d c4 | c c b8 c b4 | b b a8 b4 e,8 | 
-  g8 b2 g8 \tuplet 3/2 { a ais b_\markup { \italic "D.S. al Fine" } }
+  g8 b2 g8 \tuplet 3/2 { a ais b_"D.S. al Fine" }
   \fin
   
 }

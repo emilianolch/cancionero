@@ -20,7 +20,6 @@
     \override #'(baseline-skip . 2)    
     \triangle ##f
   }
-  
   %\set Score.markFormatter = #format-mark-box-alphabet
   
 }
@@ -79,7 +78,7 @@ segno-markup = \markup {
   \musicglyph #"scripts.segno"
 }
 
-break-tag = \markup { \italic \large \text "break" }
+break-tag = \markup { \large "break!" }
 
 break-in = {
   \ottava #1
