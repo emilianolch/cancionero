@@ -57,7 +57,7 @@ melo = \relative c' {
 \bookpart {
   \header {
     title = \markup { \abs-fontsize #32 "Sin agua no hay vida" }
-    composer = "Roberto Rodríguez"
+    composer = "Roberto Rodríguez & Lucho Splif"
     poet = "Swing / Rumba"
   }
 
