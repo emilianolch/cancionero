@@ -47,7 +47,6 @@ melo = \relative c'' {
     title = \markup { \abs-fontsize #32 "Ni un mango" }
     composer = "Lucho Splif"
     poet = "Swing"
-    meter = "Forma: A-A-B-A"
   }
 
   <<

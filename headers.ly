@@ -39,17 +39,19 @@
   
   indent = 0
   ragged-right = ##f 	% los pentagramas ocupan todo el ancho de la hoja
+  print-page-number = ##f
 }
 
 \header {
   tagline = ##f
 }
 
-intro = \markup { \box INTRO }
-outro = \markup { \box OUTRO }
+intro = \markup { \box \smaller INTRO }
+outro = \markup { \box \smaller OUTRO }
 parteA = \markup { \box A }
 parteB = \markup { \box B }
 parteC = \markup { \box C }
+parteD = \markup { \box D }
 
 ocultar-clave = \override Staff.Clef #'stencil = ##f 
 %ocultar-clave = \override Staff.Clef.break-visibility = #all-invisible
@@ -78,7 +80,8 @@ segno-markup = \markup {
   \musicglyph #"scripts.segno"
 }
 
-break-tag = \markup { \large "break!" }
+break-tag = \markup { \italic \large "break!" }
+st-tag = \markup { \italic "stop time" }
 
 break-in = {
   \ottava #1
