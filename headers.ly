@@ -49,6 +49,8 @@
 intro = \markup { \box \smaller INTRO }
 outro = \markup { \box \smaller OUTRO }
 parteA = \markup { \box A }
+parteAA = \markup { \box "A'" }
+parteAAA = \markup { \box "A''" }
 parteB = \markup { \box B }
 parteC = \markup { \box C }
 parteD = \markup { \box D }
