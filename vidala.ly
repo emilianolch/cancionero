@@ -95,7 +95,7 @@ clarinete = \relative c'' {
 \bookpart {
   \header {
     title = \markup { \abs-fontsize #32 "Vidala" }
-    composer = "Cocho López"
+    composer = "Emiliano López"
     poet = "Swing"
   }
 
